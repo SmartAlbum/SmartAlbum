@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		27660B441BFDE84000053808 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27660B411BFDE84000053808 /* ViewController.m */; };
+		27660B471BFDE86C00053808 /* SADataCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 27660B461BFDE86C00053808 /* SADataCenter.m */; };
+		27660B4A1BFDE93F00053808 /* SAImageEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 27660B491BFDE93F00053808 /* SAImageEntity.m */; };
+		27660B4C1BFDEDD600053808 /* Photos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27660B4B1BFDEDD600053808 /* Photos.framework */; };
+		27660B4E1BFDEDDC00053808 /* PhotosUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27660B4D1BFDEDDC00053808 /* PhotosUI.framework */; };
 		276CFF0E1BFDC74B00CDC2DD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 276CFF0D1BFDC74B00CDC2DD /* main.m */; };
 		276CFF111BFDC74B00CDC2DD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 276CFF101BFDC74B00CDC2DD /* AppDelegate.m */; };
 		276CFF171BFDC74B00CDC2DD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 276CFF151BFDC74B00CDC2DD /* Main.storyboard */; };
@@ -34,6 +39,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		27660B401BFDE84000053808 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		27660B411BFDE84000053808 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		27660B451BFDE86C00053808 /* SADataCenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SADataCenter.h; sourceTree = "<group>"; };
+		27660B461BFDE86C00053808 /* SADataCenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SADataCenter.m; sourceTree = "<group>"; };
+		27660B481BFDE93F00053808 /* SAImageEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SAImageEntity.h; sourceTree = "<group>"; };
+		27660B491BFDE93F00053808 /* SAImageEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SAImageEntity.m; sourceTree = "<group>"; };
+		27660B4B1BFDEDD600053808 /* Photos.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Photos.framework; path = System/Library/Frameworks/Photos.framework; sourceTree = SDKROOT; };
+		27660B4D1BFDEDDC00053808 /* PhotosUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PhotosUI.framework; path = System/Library/Frameworks/PhotosUI.framework; sourceTree = SDKROOT; };
 		276CFF091BFDC74B00CDC2DD /* SmartAlbum.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmartAlbum.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		276CFF0D1BFDC74B00CDC2DD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		276CFF0F1BFDC74B00CDC2DD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -55,6 +68,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				27660B4E1BFDEDDC00053808 /* PhotosUI.framework in Frameworks */,
+				27660B4C1BFDEDD600053808 /* Photos.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -75,9 +90,38 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		27660B3F1BFDE84000053808 /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				27660B401BFDE84000053808 /* ViewController.h */,
+				27660B411BFDE84000053808 /* ViewController.m */,
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
+		27660B421BFDE84000053808 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				27660B451BFDE86C00053808 /* SADataCenter.h */,
+				27660B461BFDE86C00053808 /* SADataCenter.m */,
+				27660B481BFDE93F00053808 /* SAImageEntity.h */,
+				27660B491BFDE93F00053808 /* SAImageEntity.m */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		27660B431BFDE84000053808 /* view */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
 		276CFF001BFDC74B00CDC2DD = {
 			isa = PBXGroup;
 			children = (
+				27660B4D1BFDEDDC00053808 /* PhotosUI.framework */,
+				27660B4B1BFDEDD600053808 /* Photos.framework */,
 				276CFF0B1BFDC74B00CDC2DD /* SmartAlbum */,
 				276CFF251BFDC74B00CDC2DD /* SmartAlbumTests */,
 				276CFF301BFDC74B00CDC2DD /* SmartAlbumUITests */,
@@ -98,6 +142,9 @@
 		276CFF0B1BFDC74B00CDC2DD /* SmartAlbum */ = {
 			isa = PBXGroup;
 			children = (
+				27660B3F1BFDE84000053808 /* controller */,
+				27660B421BFDE84000053808 /* model */,
+				27660B431BFDE84000053808 /* view */,
 				276CFF0F1BFDC74B00CDC2DD /* AppDelegate.h */,
 				276CFF101BFDC74B00CDC2DD /* AppDelegate.m */,
 				276CFF151BFDC74B00CDC2DD /* Main.storyboard */,
@@ -265,7 +312,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				27660B471BFDE86C00053808 /* SADataCenter.m in Sources */,
+				27660B441BFDE84000053808 /* ViewController.m in Sources */,
 				276CFF111BFDC74B00CDC2DD /* AppDelegate.m in Sources */,
+				27660B4A1BFDE93F00053808 /* SAImageEntity.m in Sources */,
 				276CFF0E1BFDC74B00CDC2DD /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -490,6 +540,7 @@
 				276CFF381BFDC74B00CDC2DD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		276CFF391BFDC74B00CDC2DD /* Build configuration list for PBXNativeTarget "SmartAlbumTests" */ = {
 			isa = XCConfigurationList;
@@ -498,6 +549,7 @@
 				276CFF3B1BFDC74B00CDC2DD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		276CFF3C1BFDC74B00CDC2DD /* Build configuration list for PBXNativeTarget "SmartAlbumUITests" */ = {
 			isa = XCConfigurationList;
@@ -506,6 +558,7 @@
 				276CFF3E1BFDC74B00CDC2DD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
